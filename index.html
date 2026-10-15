@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedro Notícias</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        nav {
+            background-color: #1e293b;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #0f172a;
+            border-left: 5px solid #0284c7;
+            padding-left: 12px;
+            margin-bottom: 25px;
+        }
+
+        .noticias {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        article {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        article img {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            height: 200px;
+            object-fit: cover;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        article h3 {
+            color: #0369a1;
+            text-align: center;
+        }
+
+        article p {
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pedro Notícias</h1>
+        <p>Informação e tecnologia em um só lugar</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="listagem.html">Listar</a>
+        <a href="cadastro.html">Cadastrar Notícia</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Front End - Tecnologia</h2>
+
+            <div class="noticias">
+
+                <article>
+                    <h3>Novas tecnologias transformam o dia a dia</h3>
+
+                    <img src="imagens/noticia1.jpg"
+                         alt="Computadores e tecnologia">
+
+                    <p>
+                        A tecnologia está cada vez mais presente na vida
+                        das pessoas. Novas ferramentas digitais ajudam
+                        na comunicação, nos estudos e no trabalho.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Inteligência artificial ganha espaço</h3>
+
+                    <img src="imagens/noticia2.jpg"
+                         alt="Inteligência artificial">
+
+                    <p>
+                        A inteligência artificial vem sendo utilizada
+                        em diversas áreas, contribuindo para automatizar
+                        tarefas e facilitar atividades do cotidiano.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Back End - Educação</h2>
+
+            <div class="noticias">
+
+                <article>
+                    <h3>Estudantes utilizam recursos digitais</h3>
+
+                    <img src="imagens/noticia3.jpg"
+                         alt="Estudantes estudando">
+
+                    <p>
+                        Recursos digitais podem auxiliar os estudantes
+                        na aprendizagem, oferecendo acesso a materiais
+                        educativos e novas formas de estudar.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Leitura contribui para a aprendizagem</h3>
+
+                    <img src="imagens/noticia4.jpg"
+                         alt="Livros para leitura">
+
+                    <p>
+                        O hábito da leitura ajuda a ampliar o vocabulário,
+                        desenvolver a escrita e melhorar a compreensão
+                        de diferentes assuntos.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pedro Notícias - Autor Pedro Henrique</p>
+    </footer>
+
+</body>
+
+</html>

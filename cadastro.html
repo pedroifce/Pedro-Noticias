@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícias</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Notícias</h1>
+        <p>Cadastre uma nova notícia no portal.</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <h2>Formulário de Cadastro</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </select>
+
+            <br><br>
+
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo"
+                   placeholder="Digite o título da notícia"
+                   required>
+
+            <br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <br><br>
+
+            <label for="texto">Texto da notícia:</label>
+            <br>
+            <textarea id="texto" name="texto" rows="6" cols="50"
+                      placeholder="Digite o texto da notícia"
+                      required></textarea>
+
+            <br><br>
+
+            <label for="foto">Foto da notícia:</label>
+            <input type="file" id="foto" name="foto"
+                   accept="image/*" required>
+
+            <br><br>
+
+            <button type="submit">Cadastrar notícia</button>
+            <button type="reset">Limpar formulário</button>
+
+        </form>
+
+        <br>
+
+        <a href="index.html">Voltar para a página inicial</a>
+        <br>
+        <a href="listagem.html">Ver lista de notícias</a>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - Autor Pedro Henrique</p>
+    </footer>
+
+</body>
+
+</html>
